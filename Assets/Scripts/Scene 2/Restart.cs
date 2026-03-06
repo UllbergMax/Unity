@@ -7,10 +7,7 @@ public class Restart : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Reload current scene
-            SceneManager.LoadScene(
-                SceneManager.GetActiveScene().buildIndex
-            );
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
