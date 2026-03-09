@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Scene1_Bee.unity
+    guid: c1294e91f03d7664eb156e50534b5572
+  - enabled: 1
     path: Assets/Scenes/Scene2.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Scenes/FindingPluto.unity
-    guid: e2a7b4dac52be7f4691925ecae30d450
+  - enabled: 1
+    path: Assets/Scenes/Scene 3.unity
+    guid: cf3d496cd5bfb0d499b6867601f1e112
+  - enabled: 1
+    path: Assets/Scenes/Scene4.unity
+    guid: 7da742f169886cf47a6252c06abaacb8
   - enabled: 1
     path: Assets/Scenes/Scene 5.unity
     guid: 490793b974bfceb42b1f167a2e062a2a

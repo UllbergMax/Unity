@@ -11,6 +11,7 @@ public class Scene5Player : MonoBehaviour
     public float maxDragDistance = 2f;
 
     public TextMeshProUGUI resultText;
+    public TextMeshProUGUI resultText2;
 
     private Rigidbody2D rb;
     private bool isDragging = false;
@@ -27,6 +28,9 @@ public class Scene5Player : MonoBehaviour
 
         if (resultText != null)
             resultText.gameObject.SetActive(false);
+
+        if (resultText2 != null)
+            resultText2.gameObject.SetActive(false);
     }
 
     void Update()
@@ -56,7 +60,13 @@ public class Scene5Player : MonoBehaviour
                 if (resultText != null)
                 {
                     resultText.gameObject.SetActive(true);
-                    resultText.text = "MISSION COMPLETED";
+                    resultText.text = "ALL SCENES COMPLETED!!";
+                }
+
+                if (resultText2 != null)
+                {
+                    resultText2.gameObject.SetActive(true);
+                    resultText2.text = "Made by Max & Luca";
                 }
             }
         }

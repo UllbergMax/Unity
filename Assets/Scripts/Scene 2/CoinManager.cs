@@ -1,18 +1,23 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CoinManager : MonoBehaviour
 {
-    public int totalCoins;
-    int collected;
+    public int coinsRemaining;
+
+    void Start()
+    {
+        coinsRemaining = GameObject.FindGameObjectsWithTag("Coin").Length;
+    }
 
     public void CollectCoin()
     {
-        collected++;
-        Debug.Log("Coins: " + collected + " / " + totalCoins);
+        coinsRemaining--;
 
-        if (collected >= totalCoins)
+        if (coinsRemaining <= 0)
         {
-            Debug.Log("All coins collected! Scene 2 complete!");
+            int i = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(i + 1);
         }
     }
 }

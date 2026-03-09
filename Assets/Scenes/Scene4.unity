@@ -1426,6 +1426,7 @@ GameObject:
   - component: {fileID: 1726607510}
   - component: {fileID: 1726607509}
   - component: {fileID: 1726607508}
+  - component: {fileID: 1726607513}
   m_Layer: 0
   m_Name: Pluto
   m_TagString: Pluto
@@ -1504,7 +1505,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1583,6 +1584,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726607513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726607507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9017cdbb1f4b694a8f625a7b3cbaf4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalTrigger
+  bee: {fileID: 0}
 --- !u!1 &1985151520
 GameObject:
   m_ObjectHideFlags: 0

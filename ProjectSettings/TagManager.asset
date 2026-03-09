@@ -10,6 +10,8 @@ TagManager:
   - Bee
   - Obstacle
   - Goal
+  - Target
+  - Coin
   layers:
   - Default
   - TransparentFX

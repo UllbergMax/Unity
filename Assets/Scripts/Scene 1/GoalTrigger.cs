@@ -9,13 +9,19 @@ public class GoalTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // stop the bee immediately
             if (bee != null)
                 bee.SetActive(false);
 
-            // load next scene
             int i = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(i + 1);
+
+            if (i + 1 < SceneManager.sceneCountInBuildSettings)
+            {
+                SceneManager.LoadScene(i + 1);
+            }
+            else
+            {
+                Debug.Log("Game completed!");
+            }
         }
     }
 }
