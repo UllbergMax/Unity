@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Max\\Downloads\\Unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|C:\\Users\\Max\\Downloads\\Unity\\assets\\scripts\\scene 3\\slingshotlaunch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene 3\\slingshotlaunch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\max\\downloads\\unity\\assets\\scripts\\scene 5\\scene5player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene 5\\scene5player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|C:\\Users\\Max\\Downloads\\Unity\\assets\\scripts\\scene 5\\scene5camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\max\\downloads\\unity\\assets\\scripts\\scene 5\\scene5camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene 5\\scene5camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|C:\\Users\\Max\\Downloads\\Unity\\assets\\scripts\\scene 2\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\max\\downloads\\unity\\assets\\scripts\\scene 2\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene 2\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|C:\\Users\\Max\\Downloads\\Unity\\assets\\scripts\\scene 1\\goaltrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\max\\downloads\\unity\\assets\\scripts\\scene 1\\goaltrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene 1\\goaltrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|c:\\users\\max\\downloads\\unity\\assets\\scripts\\scene 3\\slingshotlaunch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene 3\\slingshotlaunch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Scene5Player.cs",
               "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Unity\\Assets\\Scripts\\Scene 5\\Scene5Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scene 5\\Scene5Player.cs",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Scene5CameraFollow.cs",
               "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Unity\\Assets\\Scripts\\Scene 5\\Scene5CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scene 5\\Scene5CameraFollow.cs",
@@ -55,11 +55,12 @@
               "RelativeToolTip": "Assets\\Scripts\\Scene 5\\Scene5CameraFollow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T17:23:22.028Z"
+              "WhenOpened": "2026-03-09T17:23:22.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CoinManager.cs",
               "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Unity\\Assets\\Scripts\\Scene 2\\CoinManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scene 2\\CoinManager.cs",
@@ -67,11 +68,12 @@
               "RelativeToolTip": "Assets\\Scripts\\Scene 2\\CoinManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T17:15:08.867Z"
+              "WhenOpened": "2026-03-09T17:15:08.867Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "GoalTrigger.cs",
               "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Unity\\Assets\\Scripts\\Scene 1\\GoalTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scene 1\\GoalTrigger.cs",
@@ -79,17 +81,18 @@
               "RelativeToolTip": "Assets\\Scripts\\Scene 1\\GoalTrigger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T17:09:19.972Z"
+              "WhenOpened": "2026-03-09T17:09:19.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "SLingshotLaunch.cs",
               "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Unity\\Assets\\Scripts\\Scene 3\\SLingshotLaunch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scene 3\\SLingshotLaunch.cs",
               "ToolTip": "C:\\Users\\Max\\Downloads\\Unity\\Assets\\Scripts\\Scene 3\\SLingshotLaunch.cs",
               "RelativeToolTip": "Assets\\Scripts\\Scene 3\\SLingshotLaunch.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAqwDMAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T17:08:34.572Z",
               "EditorCaption": ""
