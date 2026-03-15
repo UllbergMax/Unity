@@ -10,20 +10,23 @@ public class Scene5Player : MonoBehaviour
     public float launchPower = 6f;
     public float maxDragDistance = 2f;
 
+    public float gravity = -20f;
+    public float friction = 5f;
+    public float birdRadius = 0.25f;
+
     public TextMeshProUGUI resultText;
     public TextMeshProUGUI resultText2;
 
-    private Rigidbody2D rb;
+    private Vector2 velocity;
+    private Vector2 previousPosition;
+
     private bool isDragging = false;
     private bool launched = false;
+    private bool landed = false;
     private bool missionComplete = false;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-
-        rb.bodyType = RigidbodyType2D.Kinematic;
-
         transform.position = launchPoint.position;
 
         if (resultText != null)
@@ -36,39 +39,15 @@ public class Scene5Player : MonoBehaviour
     void Update()
     {
         if (!launched)
+        {
             DragAndLaunch();
-
-        if (launched && !missionComplete)
-        {
-            // if bird falls off platform
-            if (transform.position.y < platform.position.y - 3f)
-            {
-                RestartScene();
-            }
         }
-    }
-
-    void FixedUpdate()
-    {
-        // check if bird stopped on platform
-        if (launched && !missionComplete)
+        else if (!missionComplete)
         {
-            if (rb.linearVelocity.magnitude < 0.1f && transform.position.y > platform.position.y)
-            {
-                missionComplete = true;
-
-                if (resultText != null)
-                {
-                    resultText.gameObject.SetActive(true);
-                    resultText.text = "ALL SCENES COMPLETED!!";
-                }
-
-                if (resultText2 != null)
-                {
-                    resultText2.gameObject.SetActive(true);
-                    resultText2.text = "Made by Max & Luca";
-                }
-            }
+            ApplyPhysics();
+            DetectPlatformCollision();
+            CheckPlatformEdge();
+            CheckFall();
         }
     }
 
@@ -97,11 +76,94 @@ public class Scene5Player : MonoBehaviour
             isDragging = false;
             launched = true;
 
-            rb.bodyType = RigidbodyType2D.Dynamic;
-
             Vector2 direction = (Vector2)launchPoint.position - (Vector2)transform.position;
+            velocity = direction * launchPower;
+        }
+    }
 
-            rb.linearVelocity = direction * launchPower;
+    void ApplyPhysics()
+    {
+        previousPosition = transform.position;
+
+        if (!landed)
+        {
+            velocity.y += gravity * Time.deltaTime;
+        }
+        else
+        {
+            if (velocity.x > 0)
+                velocity.x -= friction * Time.deltaTime;
+            else if (velocity.x < 0)
+                velocity.x += friction * Time.deltaTime;
+
+            if (Mathf.Abs(velocity.x) < 0.01f)
+                velocity.x = 0;
+        }
+
+        transform.position += (Vector3)(velocity * Time.deltaTime);
+
+        if (landed && velocity.x == 0 && !missionComplete)
+        {
+            missionComplete = true;
+
+            if (resultText != null)
+            {
+                resultText.gameObject.SetActive(true);
+                resultText.text = "ALL SCENES COMPLETED!!";
+            }
+
+            if (resultText2 != null)
+            {
+                resultText2.gameObject.SetActive(true);
+                resultText2.text = "Made by Max & Luca";
+            }
+        }
+    }
+
+    void DetectPlatformCollision()
+    {
+        float platformY = platform.position.y + platform.localScale.y / 2 + birdRadius;
+        float width = platform.localScale.x;
+
+        bool crossedPlatform =
+            previousPosition.y > platformY &&
+            transform.position.y <= platformY;
+
+        bool insidePlatform =
+            transform.position.x >= platform.position.x - width / 2 &&
+            transform.position.x <= platform.position.x + width / 2;
+
+        if (crossedPlatform && insidePlatform)
+        {
+            transform.position = new Vector2(transform.position.x, platformY);
+
+            velocity = new Vector2(velocity.x, 0);
+
+            landed = true;
+        }
+    }
+
+    void CheckPlatformEdge()
+    {
+        if (!landed) return;
+
+        float width = platform.localScale.x;
+
+        bool outsidePlatform =
+            transform.position.x < platform.position.x - width / 2 ||
+            transform.position.x > platform.position.x + width / 2;
+
+        if (outsidePlatform)
+        {
+            landed = false;
+        }
+    }
+
+    void CheckFall()
+    {
+        if (transform.position.y < platform.position.y - 3f)
+        {
+            RestartScene();
         }
     }
 
